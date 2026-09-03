@@ -60,6 +60,12 @@ class Export extends L10nCommand
                 'UID of the already translated language used as overlaid source language during export.'
             )
             ->addOption(
+                'onlyForcedSourceLanguage',
+                null,
+                InputOption::VALUE_NONE,
+                'Export only content available in the forced source language.'
+            )
+            ->addOption(
                 'format',
                 null,
                 InputOption::VALUE_OPTIONAL,
